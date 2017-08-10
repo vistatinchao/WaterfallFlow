@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="shop" id="gTV-IL-0wX" customClass="WaterFlowCell">
+            <rect key="frame" x="0.0" y="0.0" width="129" height="131"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="129" height="131"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z6K-Ae-6cU">
+                        <rect key="frame" x="0.0" y="0.0" width="129" height="131"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DM0-80-Lwb">
+                        <rect key="frame" x="0.0" y="106" width="129" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="ik1-wG-hY3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="z6K-Ae-6cU" secondAttribute="bottom" id="17P-1j-uDY"/>
+                <constraint firstItem="z6K-Ae-6cU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="LN6-O0-bcA"/>
+                <constraint firstAttribute="trailing" secondItem="DM0-80-Lwb" secondAttribute="trailing" id="X75-D6-Lq9"/>
+                <constraint firstAttribute="bottom" secondItem="DM0-80-Lwb" secondAttribute="bottom" id="igI-2K-Emp"/>
+                <constraint firstItem="z6K-Ae-6cU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="isW-2d-e9P"/>
+                <constraint firstItem="DM0-80-Lwb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="p0g-Mf-Uqm"/>
+                <constraint firstAttribute="trailing" secondItem="z6K-Ae-6cU" secondAttribute="trailing" id="q83-Io-ssT"/>
+            </constraints>
+            <size key="customSize" width="129" height="131"/>
+            <connections>
+                <outlet property="shopImageView" destination="z6K-Ae-6cU" id="GBU-mq-ntp"/>
+                <outlet property="shopPriceLabel" destination="DM0-80-Lwb" id="axy-uE-ZJT"/>
+            </connections>
+            <point key="canvasLocation" x="26.5" y="-24.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
